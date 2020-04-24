@@ -1,0 +1,12 @@
+; 7) calculate 3x^2+5x-7	by assuming AL=x and put the result in AX
+xor AH,AH	; AX <= x clear ah
+mov BX,AX	; BX <= x
+shl BX,1	; BX <= 2x
+shl	BX,1	; BX <= 4x
+add	BX,AX	; BX <= 5x
+mul	AL		; AX <= x^2
+mov CX,AX	; CX <= x^2
+shl AX,1	; AX <= 2x^2
+add AX,CX	; AX <= 3x^2
+add AX,BX	; AX <= 3x^2+5x
+sub AX,7	; AX <= 3x^2+5x-7

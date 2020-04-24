@@ -1,3 +1,11 @@
+; part 1) Write all the lecture codes in Debug and run them. Test them with at least one test case and make screenshots of the code, input, and output to demonstrate that your code is working and you understand it.
+; part 2) Modify code 4 to generalize subtraction to 10 bytes . Include your code and screenshots
+; part ^3) By using the procedure in code 6 (checking if a number is prime) 
+;			write a code to find all the prime numbers less than 
+;			n ( n in bx) and store them in memory from 200 onward
+; part ^4) Modify the code 7 for x stored in AX rather than AL ( 16 bit vs 8 bits)
+; part 5) Generalize the 1 bit shift for 64 bit DX:CX:BX:AX
+
 ; 1) Convert lower case alphabets to upper case from memory location 0200 to 0300 
 
 		mov BX,100

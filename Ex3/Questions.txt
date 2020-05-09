@@ -1,0 +1,34 @@
+Let's assume an unsigned number less than 4 billion is 
+stored in memory as String such as"2345654435". 
+It is easy to observe that this number can be stored 
+in a 10 character ASCII String. The binary equivalent 
+can be a 32 bits number ( 2^32= 4,294,967,296).
+
+1) By using the provided sample codes write generalized 
+routines/procedures to calculate 32 bits multiplication 
+and 64 bit division
+
+2) Write a procedure to convert the 10 digits String 
+to a 32 bit binary number and call that procedure to 
+convert the number to binary. Note that you need to 
+use the 32 bits multiplication procedure you wrote in 
+step 1. See the sample code for ASCII to binary conversion 
+in the sample lecture codes and modify it with 32 bits 
+multiplication
+
+3) Calculate x^2 by using your 32 bit multiplication and 
+store your number in a 64 bit binary number
+
+4) Write a procedure to convert the calculated x^2 back to 
+String. Note to do this you need to use the 64 bits 
+division procedure you wrote and by keep dividing 
+the number by 10
+
+5) Store the result in a 20 digit String.
+6) Note that you don’t have overflow as the result is 64 
+bits or 20 digits String
+
+7) Test your code with few input and output Strings.
+
+8) Submit the asm, exe, and screenshots from input and 
+output in debug

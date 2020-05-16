@@ -1,0 +1,22 @@
+Exercise IV: Keyboard Programming in Hardware, BIOS, and OS layers
+
+* Study assemble and debug keyboard.asm and keyboard1.asm codes. Watch the lecture and study the book to understand the keyboard hardware and buffer structure. 
+* Study TSR_template.asm and TSR_keyboard.asm in depth, assemble and run them. Understand how they work.
+* Study in depth both OS_BIOS_SERVICES_INPUT_OUTPUT.asm files , assemble and debug them. understand how they work.
+
+1) Write a program to prompt user to enter String1 and then String2, then read strings from user. Use CMPS instruction to compare these strings. Display proper messages to prompt user whether strings are equal or not equal. 
+The program sample output is as below:
+Please Enter String 1: Hooman
+Please Enter String 2: Hooman1
+Hooman in not equal to Hooman1
+
+2) Modify your code from last week (calculate x^2 from a 10 digit number which is stored as String) to ask user to enter the number and then calculate the output (max 20 digits string) and display it in the screen.
+The program sample output is as below ( Check new lines in the format):
+Please Enter X:
+12457612
+12457612*12457612=155192096742544
+ 
+3) Modify the keyboard1.asm to print the content of the keyboard buffer from location 1 to location 16. Then change the head to the beginning of the buffer and the tail to the end of the buffer. Run your code and explain the output.
+4) Modify  TSR_Keyboard.asm to clear the screen by pressing alt^s( clear screen is in OS_BIOS_Services code) . Run and test your code.
+5) Change the int 9 routine by modify TSR_keyboard.asm to change the pressed key in the buffer from lower case to upper case if alphabetic and lower case.
+Hint: After calling the old_interrupt, you should check the current character in the buffer and if lower case change it to upper case in the buffer. Run your code and explain the output.
